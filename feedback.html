@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/main.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <header class="page-header" id="MenuBar">
+        <nav>
+          <a href="menu.html" aria-label="forecastr logo" class="logo">
+            <img
+              src="public/images/logo.png"
+              width="140"
+              height="38"
+              alt=""
+            />
+          </a>
+          <ul class="admin-menu">
+            <li>
+              <a href="menu.html">
+                <svg
+                  width="24"
+                  height="21"
+                  viewBox="0 0 24 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 3.28873L18 8.58285V17.7711H15.6V10.7123H8.4V17.7711H6V8.58285L12 3.28873ZM12 0.124023L0 10.7123H3.6V20.124H10.8V13.0652H13.2V20.124H20.4V10.7123H24L12 0.124023Z"
+                    fill="E9EEFF"
+                  />
+                </svg>
+
+                <span>Нүүр хуудас</span>
+              </a>
+            </li>
+            <li>
+              <a href="tasks.html">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 13H5V11H3V13ZM3 17H5V15H3V17ZM3 9H5V7H3V9ZM7 13H21V11H7V13ZM7 17H21V15H7V17ZM7 7V9H21V7H7Z"
+                    fill="E9EEFF"
+                  />
+                </svg>
+
+                <span>Даалгавар</span>
+              </a>
+            </li>
+            <li>
+              <a href="message.html">
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 15.294L16.83 14.124H2V2.12402H18V15.294ZM18 0.124023H2C0.9 0.124023 0 1.02402 0 2.12402V14.124C0 15.224 0.9 16.124 2 16.124H16L20 20.124V2.12402C20 1.02402 19.1 0.124023 18 0.124023Z"
+                    fill="E9EEFF"
+                  />
+                </svg>
+
+                <span>Зурвасууд</span>
+              </a>
+            </li>
+            <li>
+              <a href="Dashbourd.html">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 2.12402V4.12402H12V2.12402H16ZM6 2.12402V8.12402H2V2.12402H6ZM16 10.124V16.124H12V10.124H16ZM6 14.124V16.124H2V14.124H6ZM18 0.124023H10V6.12402H18V0.124023ZM8 0.124023H0V10.124H8V0.124023ZM18 8.12402H10V18.124H18V8.12402ZM8 12.124H0V18.124H8V12.124Z"
+                    fill="E9EEFF"
+                  />
+                </svg>
+
+                <span>Хянах самбар</span>
+              </a>
+            </li>
+            <li class="down">
+              <button class="dropdown-btn">
+                Санал гомдол
+                <i class="icon-down">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 9L12 15L18 9"
+                      stroke="#DDE9F8"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+            <li class="down">
+              <button class="dropdown-btn">
+                Төcөл
+                <i class="icon-down">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 9L12 15L18 9"
+                      stroke="#DDE9F8"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="page-content" id="main">
+        <section class="search-and-user">
+          <div class="head-title">
+            <button id="closeNav" class="open-nav">&#9776;</button>
+            <h1>home</h1>
+          </div>
+
+          <div class="admin-profile">
+            <div class="search-container">
+              <form action="/action_page.php">
+                <input type="search" placeholder="Хайх.." name="search" />
+                <button type="submit">
+                  <i class="search"
+                    ><svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+                        fill="black"
+                        fill-opacity="0.54"
+                      /></svg></i>
+                </button>
+              </form>
+            </div>
+
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none">
+              <circle cx="22.5" cy="22.5" r="22.5" fill="#F38686" />
+              <path
+                d="M22.2568 28.625H20.9375V24.0244H15.9199V28.625H14.6074V18.6719H15.9199V22.9512H20.9375V18.6719H22.2568V28.625ZM29.2061 28.625C29.1331 28.4792 29.0739 28.2194 29.0283 27.8457C28.4404 28.4564 27.7386 28.7617 26.9229 28.7617C26.1937 28.7617 25.5944 28.5566 25.125 28.1465C24.6602 27.7318 24.4277 27.2077 24.4277 26.5742C24.4277 25.804 24.7194 25.207 25.3027 24.7832C25.8906 24.3548 26.7155 24.1406 27.7773 24.1406H29.0078V23.5596C29.0078 23.1175 28.8757 22.7666 28.6113 22.5068C28.347 22.2425 27.9574 22.1104 27.4424 22.1104C26.9912 22.1104 26.613 22.2243 26.3076 22.4521C26.0023 22.68 25.8496 22.9557 25.8496 23.2793H24.5781C24.5781 22.9102 24.708 22.5547 24.9678 22.2129C25.2321 21.8665 25.5876 21.5931 26.0342 21.3926C26.4854 21.1921 26.9798 21.0918 27.5176 21.0918C28.3698 21.0918 29.0374 21.306 29.5205 21.7344C30.0036 22.1582 30.2542 22.7438 30.2725 23.4912V26.8955C30.2725 27.5745 30.359 28.1146 30.5322 28.5156V28.625H29.2061ZM27.1074 27.6611C27.5039 27.6611 27.8799 27.5586 28.2354 27.3535C28.5908 27.1484 28.8483 26.8818 29.0078 26.5537V25.0361H28.0166C26.4671 25.0361 25.6924 25.4896 25.6924 26.3965C25.6924 26.793 25.8245 27.1029 26.0889 27.3262C26.3532 27.5495 26.6927 27.6611 27.1074 27.6611Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </section>
+
+        <article class="block-container">
+          <div class="block">
+            <div class="block-name">
+              <h1>Соёл-Эрдэнэ</h1>
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 384 384"
+                style="enable-background: new 0 0 384 384"
+                xml:space="preserve"
+              >
+                <g>
+                  <g>
+                    <circle cx="192" cy="42.667" r="42.667" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="192" cy="192" r="42.667" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="192" cy="341.333" r="42.667" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <p class="block-email">soyloozz29@gmail.com</p>
+            <p class="block-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio,
+              repellat.
+            </p>
+            <div class="block-bottom">
+              <div class="block-red">
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M347.216,301.211l-71.387-53.54V138.609c0-10.966-8.864-19.83-19.83-19.83c-10.966,0-19.83,8.864-19.83,19.83v118.978
+			c0,6.246,2.935,12.136,7.932,15.864l79.318,59.489c3.569,2.677,7.734,3.966,11.878,3.966c6.048,0,11.997-2.717,15.884-7.952
+			C357.766,320.208,355.981,307.775,347.216,301.211z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M256,0C114.833,0,0,114.833,0,256s114.833,256,256,256s256-114.833,256-256S397.167,0,256,0z M256,472.341
+			c-119.275,0-216.341-97.066-216.341-216.341S136.725,39.659,256,39.659c119.295,0,216.341,97.066,216.341,216.341
+			S375.275,472.341,256,472.341z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <p>1 day left</p>
+              </div>
+              <h2>Хүлээж авсан</h2>
+            </div>
+          </div>
+          <div class="block">
+            <div class="block-name">
+              <h1>Соёл-Эрдэнэ</h1>
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 384 384"
+                style="enable-background: new 0 0 384 384"
+                xml:space="preserve"
+              >
+                <g>
+                  <g>
+                    <circle cx="192" cy="42.667" r="42.667" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="192" cy="192" r="42.667" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="192" cy="341.333" r="42.667" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <p class="block-email">soyloozz29@gmail.com</p>
+            <p class="block-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio,
+              repellat.
+            </p>
+            <div class="block-bottom">
+              <div class="block-red">
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M347.216,301.211l-71.387-53.54V138.609c0-10.966-8.864-19.83-19.83-19.83c-10.966,0-19.83,8.864-19.83,19.83v118.978
+			c0,6.246,2.935,12.136,7.932,15.864l79.318,59.489c3.569,2.677,7.734,3.966,11.878,3.966c6.048,0,11.997-2.717,15.884-7.952
+			C357.766,320.208,355.981,307.775,347.216,301.211z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M256,0C114.833,0,0,114.833,0,256s114.833,256,256,256s256-114.833,256-256S397.167,0,256,0z M256,472.341
+			c-119.275,0-216.341-97.066-216.341-216.341S136.725,39.659,256,39.659c119.295,0,216.341,97.066,216.341,216.341
+			S375.275,472.341,256,472.341z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <p>1 day left</p>
+              </div>
+              <h2>Хүлээж авсан</h2>
+            </div>
+          </div>
+          <div class="block">
+            <div class="block-name">
+              <h1>Соёл-Эрдэнэ</h1>
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 384 384"
+                style="enable-background: new 0 0 384 384"
+                xml:space="preserve"
+              >
+                <g>
+                  <g>
+                    <circle cx="192" cy="42.667" r="42.667" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="192" cy="192" r="42.667" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="192" cy="341.333" r="42.667" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <p class="block-email">soyloozz29@gmail.com</p>
+            <p class="block-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio,
+              repellat.
+            </p>
+            <div class="block-bottom">
+              <div class="block-red">
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M347.216,301.211l-71.387-53.54V138.609c0-10.966-8.864-19.83-19.83-19.83c-10.966,0-19.83,8.864-19.83,19.83v118.978
+			c0,6.246,2.935,12.136,7.932,15.864l79.318,59.489c3.569,2.677,7.734,3.966,11.878,3.966c6.048,0,11.997-2.717,15.884-7.952
+			C357.766,320.208,355.981,307.775,347.216,301.211z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M256,0C114.833,0,0,114.833,0,256s114.833,256,256,256s256-114.833,256-256S397.167,0,256,0z M256,472.341
+			c-119.275,0-216.341-97.066-216.341-216.341S136.725,39.659,256,39.659c119.295,0,216.341,97.066,216.341,216.341
+			S375.275,472.341,256,472.341z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <p>1 day left</p>
+              </div>
+              <h2>Хүлээж авсан</h2>
+            </div>
+          </div>
+          <div class="block">
+            <div class="block-name">
+              <h1>Соёл-Эрдэнэ</h1>
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 384 384"
+                style="enable-background: new 0 0 384 384"
+                xml:space="preserve"
+              >
+                <g>
+                  <g>
+                    <circle cx="192" cy="42.667" r="42.667" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="192" cy="192" r="42.667" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="192" cy="341.333" r="42.667" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <p class="block-email">soyloozz29@gmail.com</p>
+            <p class="block-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio,
+              repellat.
+            </p>
+            <div class="block-bottom">
+              <div class="block-red">
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M347.216,301.211l-71.387-53.54V138.609c0-10.966-8.864-19.83-19.83-19.83c-10.966,0-19.83,8.864-19.83,19.83v118.978
+			c0,6.246,2.935,12.136,7.932,15.864l79.318,59.489c3.569,2.677,7.734,3.966,11.878,3.966c6.048,0,11.997-2.717,15.884-7.952
+			C357.766,320.208,355.981,307.775,347.216,301.211z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M256,0C114.833,0,0,114.833,0,256s114.833,256,256,256s256-114.833,256-256S397.167,0,256,0z M256,472.341
+			c-119.275,0-216.341-97.066-216.341-216.341S136.725,39.659,256,39.659c119.295,0,216.341,97.066,216.341,216.341
+			S375.275,472.341,256,472.341z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <p>1 day left</p>
+              </div>
+              <h2>Хүлээж авсан</h2>
+            </div>
+          </div>
+          <div class="block">
+            <div class="block-name">
+              <h1>Соёл-Эрдэнэ</h1>
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 384 384"
+                style="enable-background: new 0 0 384 384"
+                xml:space="preserve"
+              >
+                <g>
+                  <g>
+                    <circle cx="192" cy="42.667" r="42.667" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="192" cy="192" r="42.667" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="192" cy="341.333" r="42.667" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <p class="block-email">soyloozz29@gmail.com</p>
+            <p class="block-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio,
+              repellat.
+            </p>
+            <div class="block-bottom">
+              <div class="block-red">
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M347.216,301.211l-71.387-53.54V138.609c0-10.966-8.864-19.83-19.83-19.83c-10.966,0-19.83,8.864-19.83,19.83v118.978
+			c0,6.246,2.935,12.136,7.932,15.864l79.318,59.489c3.569,2.677,7.734,3.966,11.878,3.966c6.048,0,11.997-2.717,15.884-7.952
+			C357.766,320.208,355.981,307.775,347.216,301.211z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M256,0C114.833,0,0,114.833,0,256s114.833,256,256,256s256-114.833,256-256S397.167,0,256,0z M256,472.341
+			c-119.275,0-216.341-97.066-216.341-216.341S136.725,39.659,256,39.659c119.295,0,216.341,97.066,216.341,216.341
+			S375.275,472.341,256,472.341z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <p>1 day left</p>
+              </div>
+              <h2>Хүлээж авсан</h2>
+            </div>
+          </div>
+        </article>
+      </section>
+    </aside>
+
+    <script src="public/js/main.js"></script>
+  </body>
+</html>
